@@ -12,7 +12,7 @@ export default function Page() {
       
       <div className="max-w-3xl space-y-6">
         <p className="text-base leading-relaxed">
-          Have feedback, questions, or suggestions? We'd love to hear from you! 
+          Have feedback, questions, or suggestions? We&#39;d love to hear from you! 
           Reach out to us at <a href="mailto:support@unitconverterhub.com" className="text-blue-600 hover:text-blue-700 underline">support@unitconverterhub.com</a>.
         </p>
         

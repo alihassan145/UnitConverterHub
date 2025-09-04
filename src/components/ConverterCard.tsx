@@ -4,10 +4,10 @@ export default function ConverterCard({ title, href, description }: { title: str
   return (
     <Link
       href={href}
-      className="group block p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-700 rounded-lg hover:shadow-lg hover:shadow-blue-100 dark:hover:shadow-blue-900/20 hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500"
+      className="group block p-6 bg-gradient-to-br from-white to-teal-50/30 dark:from-gray-800 dark:to-teal-900/20 border border-teal-100 dark:border-teal-900/30 rounded-lg hover:shadow-md hover:border-teal-300 dark:hover:border-teal-700 transition-all duration-200 hover:bg-teal-50/50 dark:hover:bg-teal-900/30 focus:outline-none focus:ring-2 focus:ring-teal-500"
     >
-      <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-100 group-hover:text-blue-700 dark:group-hover:text-blue-200 transition-colors tracking-tight">{title}</h3>
-      {description && <p className="mt-2 text-sm text-blue-700 dark:text-blue-300 leading-relaxed">{description}</p>}
+      <h3 className="text-lg font-semibold text-teal-700 dark:text-teal-300 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors tracking-tight">{title}</h3>
+        {description && <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{description}</p>}
     </Link>
   );
 }

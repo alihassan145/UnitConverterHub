@@ -56,7 +56,7 @@ export async function getPostBySlug(slug: string): Promise<{ meta: PostMeta; con
       slug,
     };
     return { meta, contentHtml };
-  } catch (e) {
+  } catch {
     return null;
   }
 }

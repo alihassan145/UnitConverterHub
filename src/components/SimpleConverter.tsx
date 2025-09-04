@@ -38,7 +38,7 @@ export default function SimpleConverter({
       await navigator.clipboard.writeText(result);
       setCopied(true);
       setTimeout(() => setCopied(false), 1200);
-    } catch (e) {
+    } catch {
       // ignore
     }
   };
@@ -54,7 +54,7 @@ export default function SimpleConverter({
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder={placeholder}
-            className="w-full px-4 py-3 border-2 border-emerald-200 dark:border-emerald-700 rounded-lg bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 text-emerald-900 dark:text-emerald-100 placeholder-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-400 transition-all duration-200"
+            className="w-full px-4 py-3 border border-teal-200 dark:border-teal-800/50 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition-all duration-200"
           />
         </label>
         <label className="block">
@@ -62,14 +62,14 @@ export default function SimpleConverter({
           <input
             value={result}
             readOnly
-            className="w-full px-4 py-3 border-2 border-purple-200 dark:border-purple-700 rounded-lg bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 text-purple-900 dark:text-purple-100 placeholder-purple-500"
+            className="w-full px-4 py-3 border border-teal-200 dark:border-teal-800/50 rounded-lg bg-teal-50/30 dark:bg-teal-900/20 text-gray-900 dark:text-gray-100 placeholder-teal-400"
           />
         </label>
       </div>
       <div className="flex flex-wrap items-center gap-3">
         <button
           onClick={copy}
-          className="px-6 py-3 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 text-sm font-medium shadow-lg hover:shadow-xl hover:scale-105"
+          className="px-6 py-3 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 text-sm font-medium shadow-sm hover:shadow-md"
         >
           {copied ? "✓ Copied!" : "📋 Copy result"}
         </button>

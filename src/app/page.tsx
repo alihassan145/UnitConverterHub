@@ -21,7 +21,7 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
   return (
     <div className="space-y-10">
       <section className="space-y-6 text-center">
-        <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Unit Converter Hub</h1>
+        <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-teal-600 to-teal-500 bg-clip-text text-transparent dark:from-teal-400 dark:to-teal-300">Unit Converter Hub</h1>
         <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">Fast, accurate, and easy-to-use unit conversion tools for all your daily needs.</p>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:gap-6">
           {filtered.map((c) => (

@@ -19,20 +19,20 @@ export default function Navbar() {
     router.push(`/?${usp.toString()}`);
   };
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-indigo-200 dark:border-indigo-800 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg">
+    <header className="sticky top-0 z-40 w-full border-b border-teal-200 dark:border-teal-800 bg-gradient-to-r from-white to-teal-50 dark:from-gray-900 dark:to-teal-900/20 shadow-md">
       <div className="mx-auto max-w-6xl px-4 py-4">
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <Link href="/" className="font-semibold text-base sm:text-lg text-white hover:text-indigo-100 transition-colors">Unit Converter Hub</Link>
-          <div className="flex items-center gap-2 sm:order-2 text-white">
+          <Link href="/" className="font-semibold text-base sm:text-lg text-teal-700 dark:text-teal-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Unit Converter Hub</Link>
+          <div className="flex items-center gap-2 sm:order-2">
             <DarkModeToggle />
           </div>
           <form onSubmit={onSubmit} className="order-3 w-full sm:order-1 sm:w-auto">
-            <div className="flex items-center gap-2 rounded-full border-2 border-white/30 bg-white/20 backdrop-blur-sm px-3 py-2 shadow-sm focus-within:ring-2 focus-within:ring-white/50 focus-within:border-white/50 transition-all duration-200">
-              <Search size={16} className="text-white/70" />
+            <div className="flex items-center gap-2 rounded-md border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 px-3 py-2 shadow-sm focus-within:ring-2 focus-within:ring-teal-500 focus-within:border-teal-500 transition-all duration-200">
+              <Search size={16} className="text-gray-400 dark:text-gray-500" />
               <input
                 aria-label="Search converters"
                 type="search"
-                className="bg-transparent text-white placeholder-white/70 outline-none w-full sm:w-64"
+                className="bg-transparent text-gray-800 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 outline-none w-full sm:w-64"
                 placeholder="Search converters..."
                 value={q}
                 onChange={(e) => setQ(e.target.value)}

@@ -16,7 +16,7 @@ export default function Page() {
         </p>
         
         <p className="text-base leading-relaxed">
-          Our mission is to make everyday conversions simple and accessible for everyone. Whether you're a student, professional, or just need quick conversions, we've got you covered.
+          Our mission is to make everyday conversions simple and accessible for everyone. Whether you&#39;re a student, professional, or just need quick conversions, we&#39;ve got you covered.
         </p>
       </div>
       

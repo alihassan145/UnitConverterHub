@@ -12,7 +12,7 @@ export default function Page() {
       
       <div className="max-w-3xl space-y-6">
         <p className="text-base leading-relaxed">
-          By using Unit Converter Hub, you agree to these terms of service. Our conversion tools are provided "as is" for informational purposes.
+          By using Unit Converter Hub, you agree to these terms of service. Our conversion tools are provided &quot;as is&quot; for informational purposes.
         </p>
         
         <p className="text-base leading-relaxed">
